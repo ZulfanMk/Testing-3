@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DB0000"/>
+
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="icon" href="../public/favicon.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="manifest" href="./app.webmanifest" />
+    <title>Restaurant Catalog</title>
+
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+</head>
+<body>
+    <!-- Skip to Content untuk Aksesibilitas -->
+    <a href="#mainContent" class="skip-to-content">Skip to Content</a>
+    
+    <!-- App Bar (Navigation Bar) -->
+    <header>
+        <nav class="navbar">
+            <h1 class="brand" aria-label="Brand">Restoranku</h1>
+            <button id="hamburgerButton" class="nav-toggle" aria-label="Open Navigation Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#/favorite">Favorite</a></li>
+                <li><a href="https://github.com/ZulfanMk">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="navigationDrawer" class="drawer">
+        <ul class="drawer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#/favorite">Favorite</a></li>
+            <li><a href="https://github.com/ZulfanMk">About Us</a></li>
+        </ul>
+    </aside>
+
+    <!-- Hero Element -->
+    <section class="hero">
+        <picture>
+            <source media="(max-width: 600px)" srcset="/images/heros/hero-image_2-small.jpg">
+            <source media="(min-width: 601px)" srcset="/images/heros/hero-image_2-large.jpg">
+            <img src="public/images/heros/hero-image_2-large.jpg" alt="Gambar Sampul">
+        </picture>
+    </section>
+
+    <main id="mainContent" tabindex="0"></main>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 - Restoranku. All Rights Reserved.</p>
+    </footer>
+
+    <!-- <script src="./index.js" type="module"></script> -->
+</body>
+</html>
